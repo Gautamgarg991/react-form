@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FormField from "./FormField";
 import SectionHeading from "./SectionHeading";
+import MyComponent from "./Dropdown";
 
 const YourInfo = ({ yourInfo, onChange, isEmpty }) => {
   const [formFields, setFormFields] = useState([
@@ -35,6 +36,7 @@ const YourInfo = ({ yourInfo, onChange, isEmpty }) => {
         desc="Please provide your name, email address, and phone number."
       />
       <form>
+        <MyComponent/>
         <div className="flex flex-col space-y-6 text-[14px]">
           {formFields.map((formField) => (
             <FormField
