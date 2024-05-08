@@ -19,26 +19,10 @@ const AddonComponent = ({
       setAddonBg("");
       setCheck(false);
     }
-    // console.log("check", check);
-    // console.log("selected", selected);
   }, [selected, check]);
-
-  // const toggleCheckbox = () => {
-  //   if (selected) {
-  //     setAddonBg("bg-[#d6d9e6]");
-  //     setCheck(true);
-  //   } else {
-  //     setAddonBg("");
-  //     setCheck(false);
-  //   }
-  // };
 
   return (
     <div
-      // onClick={() => {
-      //   onAddonSelect(id);
-      //   toggleCheckbox();
-      // }}
       className={`${addonBg} flex justify-between items-center border border-[#d6d9e6] space-x-5 md:space-x-40 py-3 pr-8 pl-6 rounded-xl hover:border-[#02295a]`}
     >
       <div className="flex items-center justify-between w-full space-x-6">

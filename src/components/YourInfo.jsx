@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FormField from "./FormField";
 import SectionHeading from "./SectionHeading";
 
-const YourInfo = ({ yourInfo, onChangeYourInfo, isEmpty }) => {
+const YourInfo = ({ yourInfo, onChange, isEmpty }) => {
   const [formFields, setFormFields] = useState([
     {
       id: 1,
@@ -38,7 +38,7 @@ const YourInfo = ({ yourInfo, onChangeYourInfo, isEmpty }) => {
         <div className="flex flex-col space-y-6 text-[14px]">
           {formFields.map((formField) => (
             <FormField
-              onChangeYourInfo={onChangeYourInfo}
+              onChange={onChange}
               key={formField.id}
               name={formField.name}
               label={formField.label}
